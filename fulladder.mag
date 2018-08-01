@@ -1,0 +1,77 @@
+magic
+tech scmos
+timestamp 1460676775
+<< polysilicon >>
+rect 157 70 202 72
+rect -128 64 -12 66
+rect -128 62 -126 64
+rect -142 60 -126 62
+rect -128 -385 -126 60
+rect 157 50 159 70
+rect 5 31 11 33
+rect 5 -31 7 31
+rect -8 -33 7 -31
+rect 5 -328 7 -33
+rect 81 -28 149 -26
+rect 81 -131 83 -28
+rect 58 -133 83 -131
+rect 81 -185 83 -133
+rect 157 -177 159 46
+rect 219 27 225 29
+rect 219 -26 221 27
+rect 169 -28 249 -26
+rect 126 -179 159 -177
+rect 81 -187 90 -185
+rect 133 -193 186 -191
+rect 5 -330 46 -328
+rect 44 -377 46 -330
+rect 12 -379 46 -377
+rect -128 -387 -12 -385
+rect 21 -393 54 -391
+rect 52 -454 54 -393
+rect 184 -399 186 -193
+rect 243 -393 281 -391
+rect 184 -401 212 -399
+rect 279 -454 281 -393
+rect 52 -456 281 -454
+rect 279 -464 281 -456
+<< metal1 >>
+rect 323 58 363 62
+rect 96 49 156 50
+rect 94 46 156 49
+rect 153 -29 165 -25
+rect 249 -408 307 -404
+<< polycontact >>
+rect 319 58 323 62
+rect 156 46 160 50
+rect 149 -29 153 -25
+rect 165 -29 169 -25
+rect 129 -194 133 -190
+rect 17 -394 21 -390
+use xor1  xor1_0
+timestamp 1460672567
+transform 1 0 12 0 1 67
+box -33 -80 96 38
+use xor1  xor1_1
+timestamp 1460672567
+transform 1 0 226 0 1 65
+box -33 -80 96 38
+use nand1  nand1_0
+timestamp 1460672980
+transform 1 0 106 0 1 -183
+box -21 -41 27 35
+use nand1  nand1_1
+timestamp 1460672980
+transform 1 0 -6 0 1 -383
+box -21 -41 27 35
+use nand1  nand1_2
+timestamp 1460672980
+transform 1 0 225 0 1 -397
+box -21 -41 27 35
+<< labels >>
+rlabel polysilicon 59 -132 59 -132 1 Cin
+rlabel polysilicon -139 61 -139 61 3 A
+rlabel polysilicon -5 -32 -5 -32 1 B
+rlabel metal1 354 59 354 59 1 Sum
+rlabel metal1 297 -406 297 -406 1 Carry
+<< end >>

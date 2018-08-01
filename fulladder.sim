@@ -1,0 +1,79 @@
+| units: 100 tech: scmos format: MIT
+p nand1_2/A VDD Carry 2 6 217 -385
+p nand1_2/B Carry VDD 2 6 234 -385
+n nand1_2/A nand1_2/gnd nand1_2/a_n6_n27# 2 6 217 -424
+n nand1_2/B nand1_2/a_n6_n27# Carry 2 6 234 -424
+p A VDD nand1_2/B 2 6 -14 -371
+p B nand1_2/B VDD 2 6 3 -371
+n A nand1_1/gnd nand1_1/a_n6_n27# 2 6 -14 -410
+n B nand1_1/a_n6_n27# nand1_2/B 2 6 3 -410
+p Sum VDD nand1_2/A 2 6 98 -171
+p xor1_1/A nand1_2/A VDD 2 6 115 -171
+n Sum nand1_0/gnd nand1_0/a_n6_n27# 2 6 98 -210
+n xor1_1/A nand1_0/a_n6_n27# nand1_2/A 2 6 115 -210
+p xor1_1/A xor1_1/a_n18_n26# VDD 2 6 208 71
+p Sum xor1_1/a_9_n26# VDD 2 6 235 71
+p Sum xor1_1/A xor1_1/Vo 2 6 281 78
+n xor1_1/a_9_n26# xor1_1/A xor1_1/Vo 2 6 281 53
+n xor1_1/A xor1_1/gnd xor1_1/a_n18_n26# 2 6 208 37
+n Sum xor1_1/gnd xor1_1/a_9_n26# 2 6 235 37
+p xor1_1/a_9_n26# xor1_1/a_n18_n26# xor1_1/Vo 2 5 281 34
+n Sum xor1_1/a_n18_n26# xor1_1/Vo 2 6 282 1
+p A xor1_0/a_n18_n26# VDD 2 6 -6 73
+p B xor1_0/a_9_n26# VDD 2 6 21 73
+p B A xor1_1/A 2 6 67 80
+n xor1_0/a_9_n26# A xor1_1/A 2 6 67 55
+n A xor1_0/gnd xor1_0/a_n18_n26# 2 6 -6 39
+n B xor1_0/gnd xor1_0/a_9_n26# 2 6 21 39
+p xor1_0/a_9_n26# xor1_0/a_n18_n26# xor1_1/A 2 5 67 36
+n B xor1_0/a_n18_n26# xor1_1/A 2 6 68 3
+C xor1_0/gnd GND 6.4
+R xor1_0/gnd 504
+C xor1_0/a_9_n26# GND 20.3
+R xor1_0/a_9_n26# 985
+C xor1_0/a_n18_n26# GND 40.8
+R xor1_0/a_n18_n26# 514
+C A GND 218.9
+R A 11089
+C B GND 206.9
+R B 10904
+R xor1_0/w_46_n34# 5239
+R xor1_0/w_46_11# 5012
+R xor1_0/w_7_n2# 4510
+R xor1_0/w_n20_n2# 4510
+C xor1_1/gnd GND 6.4
+R xor1_1/gnd 504
+C xor1_1/a_9_n26# GND 20.3
+R xor1_1/a_9_n26# 985
+C xor1_1/a_n18_n26# GND 40.8
+R xor1_1/a_n18_n26# 514
+C xor1_1/Vo GND 15.5
+R xor1_1/Vo 538
+C xor1_1/A GND 160.3
+R xor1_1/A 7596
+C Sum GND 208.9
+R Sum 10535
+R xor1_1/w_46_n34# 5239
+R xor1_1/w_46_11# 5012
+R xor1_1/w_7_n2# 4510
+R xor1_1/w_n20_n2# 4510
+R nand1_0/a_n6_n27# 67
+C nand1_0/gnd GND 7.7
+R nand1_0/gnd 392
+C nand1_2/A GND 89.5
+R nand1_2/A 4358
+R nand1_0/w_n21_9# 9397
+R nand1_1/a_n6_n27# 67
+C nand1_1/gnd GND 7.7
+R nand1_1/gnd 392
+R nand1_1/w_n21_9# 9397
+R nand1_2/a_n6_n27# 67
+C nand1_2/gnd GND 7.7
+R nand1_2/gnd 392
+C Carry GND 20.1
+R Carry 195
+C nand1_2/B GND 124.0
+R nand1_2/B 6088
+C VDD GND 38.9
+R VDD 3667
+R nand1_2/w_n21_9# 9397

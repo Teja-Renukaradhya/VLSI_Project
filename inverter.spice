@@ -1,0 +1,20 @@
+
+.model pfet pmos
+.model nfet nmos
+.tran 0.05n 40n
+
+M1000 out in vdd w_n8_5# pfet w=6u l=4u
++ ad=54p pd=30u as=48p ps=28u
+M1001 out in gnd Gnd nfet w=6u l=4u
++ ad=54p pd=30u as=48p ps=28u
+C0 gnd gnd! 6.5fF
+C1 out gnd! 5.1fF
+C2 in gnd! 10.1fF
+C3 vdd gnd! 6.2fF
+
+vdd vdd 0 5
+vin in 0 0 pulse 0 5 1n 2n 2n 7n 20n
+
+.probe v(in) v(out)
+
+.end
